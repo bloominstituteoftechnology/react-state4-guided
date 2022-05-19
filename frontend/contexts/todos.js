@@ -16,9 +16,9 @@ export default function TodosProvider(props) {
       })
   }
 
-  effect(() => {
-
-  })
+  useEffect(() => {
+    fetchTodos()
+  }, [])
 
   return (
     <TodosContext.Provider value={{ todos, fetchTodos }}>
