@@ -22,15 +22,7 @@ export default function App() {
     setState({ ...state, form: { [name]: value } })
   }
   const onSubmit = () => {
-    setState({
-      ...state,
-      form: initialForm,
-      todos: state.todos.concat({
-        id: getId(),
-        name: state.form.name,
-        completed: false,
-      }),
-    })
+
   }
   const toggleShouldShow = () => {
     setState({
@@ -39,14 +31,7 @@ export default function App() {
     })
   }
   const toggleStatus = id => () => {
-    setState({
-      ...state,
-      todos: state.todos.map(td => {
-        return td.id == id
-          ? { ...td, completed: !td.completed }
-          : td
-      })
-    })
+
   }
   return (
     <div>
