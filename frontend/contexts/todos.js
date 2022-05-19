@@ -9,10 +9,10 @@ export default function TodosProvider(props) {
   function fetchTodos() {
     axios.get('http://localhost:9000/api/todos')
       .then((res) => {
-        setTodos(res.d)
+        setTodos(res.data.data)
       })
       .catch((err) => {
-
+        debugger
       })
   }
 }
