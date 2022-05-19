@@ -1,3 +1,5 @@
 import React, { createContext, useState } from 'react'
 
-const CountContext = createContext() // will be used by consumers of context
+// will be used by consumers of context
+export const CountContext = createContext() // will be used by consumers of context
+
