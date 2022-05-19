@@ -2,9 +2,7 @@ import React, { useState, useContext } from 'react'
 import { CountContext } from '../contexts/count'
 import Form from './Form'
 import TodoList from './TodoList'
-
-let id = 0
-const getId = () => ++id
+import { TodosContext } from '../contexts/todos'
 
 const initialForm = {
   name: '',
