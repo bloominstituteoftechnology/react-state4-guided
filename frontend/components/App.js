@@ -15,6 +15,7 @@ const initialState = {
 export default function App() {
   const [state, setState] = useState(initialState)
   const { count, inc, dec } = useContext(CountContext)
+  const stuff = useContext(TodosContext)
 
   const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
