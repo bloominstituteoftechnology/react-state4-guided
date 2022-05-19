@@ -40,7 +40,7 @@ export default function App() {
       <button onClick={inc}>increment</button>
       <button onClick={dec}>decrement</button>
       <TodoList
-        todos={state.todos}
+        todos={[]}
         displayCompleteds={state.displayCompleteds}
         toggleStatus={toggleStatus}
       />
