@@ -16,8 +16,14 @@ export default function TodosProvider(props) {
       })
   }
 
-  function postTodo() {
-
+  function postTodo(name) {
+    axios.post('http://localhost:9000/api/todos', { name })
+      .then((res) => {
+        setTodos()
+      })
+      .catch((err) => {
+        debugger
+      })
   }
 
   function patchTodo() {
