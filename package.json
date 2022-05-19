@@ -1,5 +1,5 @@
 {
-  "name": "react-state1-guided",
+  "name": "react-state4-guided",
   "version": "0.0.1",
   "scripts": {
     "dev": "fkill :9000 :3000 -s && concurrently \"npm:backend\" \"npm:frontend\"",
@@ -57,6 +57,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bloominstituteoftechnology/react-state1-guided.git"
+    "url": "git+https://github.com/bloominstituteoftechnology/react-state4-guided.git"
   }
 }
