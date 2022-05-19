@@ -5,4 +5,7 @@ export const CountContext = createContext() // will be used by consumers of cont
 
 export default function CountProvider(props) {
   // create some state and callbacks
+  const [count, setCount] = useState(0)
+  
+
 }
