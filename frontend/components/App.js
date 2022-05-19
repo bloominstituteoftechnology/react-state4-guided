@@ -22,6 +22,7 @@ export default function App() {
   }
   const onSubmit = () => {
     postTodo(state.form.name)
+    setState({ ...state, form: initialForm })
   }
   const toggleShouldShow = () => {
     setState({
