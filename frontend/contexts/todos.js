@@ -15,4 +15,11 @@ export default function TodosProvider(props) {
         debugger
       })
   }
+
+
+  return (
+    <TodosContext.Provider value={{ todos, fetchTodos }}>
+      { }
+    </TodosContext.Provider>
+  )
 }
