@@ -26,8 +26,14 @@ export default function TodosProvider(props) {
       })
   }
 
-  function patchTodo() {
-
+  function patchTodo(id) {
+    axios.patch('http://localhost:9000/api/todos/' + id)
+      .then((res) => {
+        setTodos(todos.concat(res.data.data))
+      })
+      .catch((err) => {
+        debugger
+      })
   }
 
   useEffect(() => {
