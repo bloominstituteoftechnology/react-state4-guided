@@ -16,6 +16,14 @@ export default function TodosProvider(props) {
       })
   }
 
+  function postTodo() {
+
+  }
+
+  function patchTodo() {
+
+  }
+
   useEffect(() => {
     fetchTodos()
   }, [])
