@@ -58,6 +58,8 @@ export default function App() {
     <div>
       <h1>Todo App</h1>
       <div>Count is {count}</div>
+      <button onClick={inc}>increment</button>
+      <button onClick={dec}>decrment</button>
       <TodoList
         todos={state.todos}
         displayCompleteds={state.displayCompleteds}
