@@ -15,7 +15,7 @@ const initialState = {
 export default function App() {
   const [state, setState] = useState(initialState)
   const { count, inc, dec } = useContext(CountContext)
-  const stuff = useContext(TodosContext)
+  const { todos } = useContext(TodosContext)
 
   const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
@@ -39,7 +39,7 @@ export default function App() {
       <button onClick={inc}>increment</button>
       <button onClick={dec}>decrement</button>
       <TodoList
-        todos={[]}
+        todos={todos}
         displayCompleteds={state.displayCompleteds}
         toggleStatus={toggleStatus}
       />
