@@ -29,7 +29,7 @@ export default function TodosProvider(props) {
   function patchTodo(id) {
     axios.patch('http://localhost:9000/api/todos/' + id)
       .then(() => {
-        fetchTodos()
+        fetchTodos() /// Lisa approach
       })
       .catch((err) => {
         debugger
@@ -41,7 +41,7 @@ export default function TodosProvider(props) {
   }, [])
 
   return (
-    <TodosContext.Provider value={{ todos, fetchTodos, postTodo }}>
+    <TodosContext.Provider value={{ todos, fetchTodos, postTodo, patchTodo }}>
       {props.children}
     </TodosContext.Provider>
   )
