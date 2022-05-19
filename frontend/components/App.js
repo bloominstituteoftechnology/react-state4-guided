@@ -15,7 +15,7 @@ const initialState = {
 export default function App() {
   const [state, setState] = useState(initialState)
   const { count, inc, dec } = useContext(CountContext)
-  const { todos, postTodo } = useContext(TodosContext)
+  const { todos, postTodo, patchTodo } = useContext(TodosContext)
 
   const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
@@ -31,7 +31,7 @@ export default function App() {
     })
   }
   const toggleStatus = id => () => {
-
+    patchTodo(id)
   }
   return (
     <div>
