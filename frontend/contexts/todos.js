@@ -31,7 +31,7 @@ export default function TodosProvider(props) {
       .then((res) => {
         // fetchTodos() /// Lisa approach
         setTodos(todos.map(td => {
-          return 
+          return (td.id !== id ? td : res.data.data)
         }))
       })
       .catch((err) => {
