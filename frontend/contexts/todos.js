@@ -29,7 +29,8 @@ export default function TodosProvider(props) {
   function patchTodo(id) {
     axios.patch('http://localhost:9000/api/todos/' + id)
       .then((res) => {
-        setTodos(todos.concat(res.data.data))
+        const updated = res.data.data
+        setTodos()
       })
       .catch((err) => {
         debugger
