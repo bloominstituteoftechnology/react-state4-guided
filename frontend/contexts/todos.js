@@ -28,8 +28,11 @@ export default function TodosProvider(props) {
 
   function patchTodo(id) {
     axios.patch('http://localhost:9000/api/todos/' + id)
-      .then(() => {
-        fetchTodos() /// Lisa approach
+      .then((res) => {
+        // fetchTodos() /// Lisa approach
+        setTodos(todos.map(td => {
+          return 
+        }))
       })
       .catch((err) => {
         debugger
