@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 import axios from 'axios'
 
 export const TodosContext = createContext()
@@ -16,10 +16,13 @@ export default function TodosProvider(props) {
       })
   }
 
+  effect(() => {
+
+  })
 
   return (
     <TodosContext.Provider value={{ todos, fetchTodos }}>
-      { }
+      {props.children}
     </TodosContext.Provider>
   )
 }
