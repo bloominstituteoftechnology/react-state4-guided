@@ -19,7 +19,7 @@ export default function TodosProvider(props) {
   function postTodo(name) {
     axios.post('http://localhost:9000/api/todos', { name })
       .then((res) => {
-        setTodos()
+        setTodos(todos.concat(res.data.data))
       })
       .catch((err) => {
         debugger
@@ -35,7 +35,7 @@ export default function TodosProvider(props) {
   }, [])
 
   return (
-    <TodosContext.Provider value={{ todos, fetchTodos }}>
+    <TodosContext.Provider value={{ todos, fetchTodos, postTodo }}>
       {props.children}
     </TodosContext.Provider>
   )
