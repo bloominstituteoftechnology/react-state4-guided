@@ -11,8 +11,8 @@ export default function CountProvider(props) {
   const dec = () => setCount(count - 1)
 
   return (
-    <CountContext.Provider>
-      
+    <CountContext.Provider value={}>
+      {props.children}
     </CountContext.Provider>
   )
 }
