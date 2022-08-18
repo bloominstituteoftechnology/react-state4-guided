@@ -20,7 +20,7 @@ export default function TodosProvider(props) {
   async function postTodo(name) {
     try {
       const res = await axios.post(url, { name })
-      setTodos()
+      setTodos([...todos, res.data.data])
     } catch (err) {
       debugger
     }
@@ -28,7 +28,7 @@ export default function TodosProvider(props) {
 
   async function patchTodo(id) {
     try {
-
+      
     } catch (err) {
       debugger
     }
