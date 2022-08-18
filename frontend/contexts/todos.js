@@ -13,7 +13,7 @@ export default function TodosProvider(props) {
       const res = await axios.get(url)
       setTodos(res.data.data)
     } catch (err) {
-
+      debugger
     }
   }
 }
