@@ -16,4 +16,20 @@ export default function TodosProvider(props) {
       debugger
     }
   }
+
+  async function postTodo(name) {
+    try {
+
+    } catch (err) {
+      debugger
+    }
+  }
+
+  async function patchTodo(id) {
+    try {
+
+    } catch (err) {
+      debugger
+    }
+  }
 }
