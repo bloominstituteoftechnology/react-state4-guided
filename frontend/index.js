@@ -11,9 +11,9 @@ const container = document.getElementById('root')
 const root = createRoot(container)
 
 root.render(
-  <CountProvider>
-    <TodosProvider>
+  <TodosProvider>
+    <CountProvider>
       <App />
-    </TodosProvider>
-  </CountProvider>
+    </CountProvider>
+  </TodosProvider>
 )
