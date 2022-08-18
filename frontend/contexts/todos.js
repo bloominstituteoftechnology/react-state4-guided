@@ -11,6 +11,7 @@ export default function TodosProvider(props) {
   async function fetchTodos() {
     try {
       const res = await axios.get(url)
+      setTodos(res.data.data)
     } catch (err) {
 
     }
