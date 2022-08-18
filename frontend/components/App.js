@@ -20,8 +20,9 @@ export default function App() {
   const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
   }
+  const resetForm = () => setState({ ...state, form: initialForm })
   const onSubmit = () => {
-    postTodo(state.form.name)
+    postTodo(state.form.name, resetForm)
     setState({ ...state, form: initialForm })
   }
   const toggleShouldShow = () => {
