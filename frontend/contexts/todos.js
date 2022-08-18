@@ -8,6 +8,10 @@ const url = 'http://localhost:9000/api/todos/' // end with slash
 export default function TodosProvider(props) {
   const [todos, setTodos] = useState([])
 
+  useEffect(() => {
+    fetchTodos()
+  }, [])
+
   async function fetchTodos() {
     try {
       const res = await axios.get(url)
