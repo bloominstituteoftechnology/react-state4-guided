@@ -9,7 +9,7 @@ export default function CountProvider(props) {
 
   return (
     <CountContext.Provider value={{ count, inc, dec }}>
-      {}
+      {props.children}
     </CountContext.Provider>
   )
 }
