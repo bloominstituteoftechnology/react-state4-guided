@@ -59,6 +59,8 @@ export default function App() {
       <h1>Todo App</h1>
       <div>
         {count}
+        <button onClick={inc}>inc</button>
+        <button onClick={dec}>dec</button>
       </div>
       <TodoList
         todos={state.todos}
