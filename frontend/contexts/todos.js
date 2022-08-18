@@ -6,7 +6,11 @@ export const TodosContext = createContext()
 export default function TodosProvider(props) {
   const [todos, setTodos] = useState([])
 
-  function fetchTodos() {
+  async function fetchTodos() {
+    try {
 
+    } catch (err) {
+
+    }
   }
 }
