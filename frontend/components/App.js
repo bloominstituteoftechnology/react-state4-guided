@@ -3,20 +3,11 @@ import Form from './Form'
 import TodoList from './TodoList'
 import { CountContext } from '../contexts/count'
 
-let id = 0
-const getId = () => ++id
-
-const initialTodos = [
-  { id: getId(), name: "Walk the dog", completed: false },
-  { id: getId(), name: "Learn React", completed: true },
-  { id: getId(), name: "Have fun", completed: false },
-]
 const initialForm = {
   name: '',
 }
 const initialState = {
   form: initialForm,
-  todos: initialTodos,
   displayCompleteds: true,
 }
 
