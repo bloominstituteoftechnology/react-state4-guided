@@ -7,6 +7,6 @@ export default function TodosProvider(props) {
 
   function fetchTodos() {
     // use axios to hit the API
-    // 
+    // use async/await
   }
 }
