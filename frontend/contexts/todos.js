@@ -19,7 +19,7 @@ export default function TodosProvider(props) {
 
   async function postTodo(name) {
     try {
-      const res = axios.post()
+      const res = axios.post(url, { name })
     } catch (err) {
       debugger
     }
