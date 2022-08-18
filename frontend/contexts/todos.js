@@ -28,7 +28,7 @@ export default function TodosProvider(props) {
 
   async function patchTodo(id) {
     try {
-      
+      const res = await axios.patch(url)
     } catch (err) {
       debugger
     }
