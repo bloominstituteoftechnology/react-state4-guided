@@ -1,4 +1,4 @@
-# Advanced State Management GP PART 4
+# Advanced State Management - The Context API
 
 ## Requirements
 
@@ -9,7 +9,13 @@
 
 Other browser/Node/NPM configurations might work but haven't been tested.
 
-## Set Up
+## Scripts
+
+- `npm install`
+- `npm run dev`
+- `npm run ketchup`
+
+## Setup
 
 - Clone and `npm install`. DO NOT FORK! (Or the "ketchup" script won't work.)
 - Launch the project on a development server executing `npm run dev`.
