@@ -29,7 +29,7 @@ export default function TodosProvider(props) {
   async function patchTodo(id) {
     try {
       const res = await axios.patch(url + id)
-      setTodos()
+      setTodos(todos.map(td => td.id === id ? res.data.data : td))
     } catch (err) {
       debugger
     }
