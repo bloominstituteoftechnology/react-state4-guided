@@ -21,10 +21,11 @@ export default function TodosProvider(props) {
     }
   }
 
-  async function postTodo(name) {
+  async function postTodo(name, success) {
     try {
       const res = await axios.post(url, { name })
       setTodos([...todos, res.data.data])
+      success()
     } catch (err) {
       debugger
     }
