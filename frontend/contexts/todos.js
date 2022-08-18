@@ -36,7 +36,7 @@ export default function TodosProvider(props) {
   }
 
   return (
-    <TodosContext.Provider value={{ todos, fet }}>
+    <TodosContext.Provider value={{ todos, fetchTodos, postTodo, patchTodo }}>
 
     </TodosContext.Provider>
   )
