@@ -21,15 +21,7 @@ export default function App() {
     setState({ ...state, form: { [name]: value } })
   }
   const onSubmit = () => {
-    setState({
-      ...state,
-      form: initialForm,
-      todos: state.todos.concat({
-        id: getId(),
-        name: state.form.name,
-        completed: false,
-      }),
-    })
+    postTodo()
   }
   const toggleShouldShow = () => {
     setState({
