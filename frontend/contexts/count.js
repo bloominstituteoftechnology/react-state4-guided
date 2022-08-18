@@ -8,7 +8,9 @@ export default function CountProvider(props) {
   const dec = () => setCount(st => st - 1)
 
   return (
-    CountContext
+    <CountContext.Provider value={}>
+
+    </CountContext.Provider>
 
   )
 
