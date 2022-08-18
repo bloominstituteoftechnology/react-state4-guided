@@ -30,14 +30,7 @@ export default function App() {
     })
   }
   const toggleStatus = id => () => {
-    setState({
-      ...state,
-      todos: state.todos.map(td => {
-        return td.id == id
-          ? { ...td, completed: !td.completed }
-          : td
-      })
-    })
+    patchTodo(id)
   }
   return (
     <div>
