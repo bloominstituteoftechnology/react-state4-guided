@@ -24,8 +24,6 @@ export default function App() {
   const [state, setState] = useState(initialState)
   const { count, inc, dec } = useContext(CountContext)
 
-  console.log(count, inc, dec)
-
   const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
   }
@@ -59,6 +57,9 @@ export default function App() {
   return (
     <div>
       <h1>Todo App</h1>
+      <div>
+        {count}
+      </div>
       <TodoList
         todos={state.todos}
         displayCompleteds={state.displayCompleteds}
