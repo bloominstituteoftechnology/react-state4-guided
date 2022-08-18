@@ -41,7 +41,7 @@ export default function App() {
         <button onClick={dec}>dec</button>
       </div>
       <TodoList
-        todos={state.todos}
+        todos={todos}
         displayCompleteds={state.displayCompleteds}
         toggleStatus={toggleStatus}
       />
