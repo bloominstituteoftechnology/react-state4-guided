@@ -12,6 +12,8 @@ const root = createRoot(container)
 
 root.render(
   <CountProvider>
-    <App />
+    <TodosProvider>
+      <App />
+    </TodosProvider>
   </CountProvider>
 )
