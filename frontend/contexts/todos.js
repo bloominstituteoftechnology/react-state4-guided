@@ -3,7 +3,7 @@ import axios from 'axios'
 
 export const TodosContext = createContext()
 
-const url = 'http://localhost:9000/'
+const url = 'http://localhost:9000/api/todos/' // end with slash
 
 export default function TodosProvider(props) {
   const [todos, setTodos] = useState([])
