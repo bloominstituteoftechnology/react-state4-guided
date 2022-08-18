@@ -34,4 +34,10 @@ export default function TodosProvider(props) {
       debugger
     }
   }
+
+  return (
+    <TodosContext.Provider value={{ todos, fet }}>
+
+    </TodosContext.Provider>
+  )
 }
