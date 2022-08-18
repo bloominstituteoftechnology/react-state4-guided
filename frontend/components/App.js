@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react'
 import Form from './Form'
 import TodoList from './TodoList'
 import { CountContext } from '../contexts/count'
-import { } from '../contexts/todos'
+import { TodosContext } from '../contexts/todos'
 
 const initialForm = {
   name: '',
@@ -15,6 +15,7 @@ const initialState = {
 export default function App() {
   const [state, setState] = useState(initialState)
   const { count, inc, dec } = useContext(CountContext)
+  const { todos, fetchTodos, postTodo, patchTodo } = useContext()
 
   const onChange = ({ name, value }) => {
     setState({ ...state, form: { [name]: value } })
